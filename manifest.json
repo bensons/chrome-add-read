@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Add to Chrome Reading List Keyboard Shortcut",
+  "version": "1.0",
+  "description": "Add current tab to Reading List with keyboard shortcut",
+  "permissions": [
+    "readingList",
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "Add to Reading List (Shift+Cmd+R)"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "add-to-reading-list": {
+      "suggested_key": {
+        "default": "Shift+Ctrl+R",
+        "mac": "Shift+Command+R"
+      },
+      "description": "Add current tab to Reading List"
+    }
+  }
+}
